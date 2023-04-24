@@ -1,0 +1,82 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav ul{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.nav ul li{
+    padding: 8px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icono_menu{
+    width: 15px;
+}
+
+.foto_menu{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.icono_google{
+    margin: 80px 0px;
+}
+
+.google{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#buscador{
+    border-radius: 20px;
+    width: 500px;
+    height: 30px;
+    padding: 5px 20px;
+    border: 1px solid rgba(128, 128, 128, 0.368);
+}
+
+#buscador:hover{
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+.search{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    float: left;
+}
+
+.botones{
+    margin: 20px 20px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(201, 201, 201, 0.122);
+    cursor: pointer;
+}
+
+.botones:hover{
+    border: 1px solid rgb(201, 201, 201);
+}
+
