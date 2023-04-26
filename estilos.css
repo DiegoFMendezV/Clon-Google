@@ -1,6 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+a{
+    text-decoration: none;
+    color:black;
 }
 
 .nav{
@@ -8,7 +17,7 @@ body{
     justify-content: flex-end;
 }
 
-.nav ul{
+.nav .nav_menu ul{
     width: 250px;
     height: auto;
     display: flex;
@@ -17,57 +26,70 @@ body{
     list-style: none;
 }
 
-.nav ul li{
-    padding: 8px;
-    margin-right: 10px;
-    cursor: pointer;
+.nav .nav_menu li{
+    margin-right: 20px;
 }
 
 .icono_menu{
     width: 15px;
+    cursor: pointer;
 }
 
 .foto_menu{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    margin-right: 20px;
+    cursor: pointer;
 }
 
-.icono_google{
-    margin: 80px 0px;
+main{
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
 
-.google{
+main .central{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    margin: 0px 0px 30px 0;
+    height: 100%;
+    width: 100%;
+}
+
+main .central .searcher{
     display: flex;
     align-items: center;
-    justify-content: center;
-    
-}
-
-#buscador{
-    border-radius: 20px;
-    width: 500px;
     height: 30px;
-    padding: 5px 20px;
-    border: 1px solid rgba(128, 128, 128, 0.368);
+    width: 500px;
+    padding: 8px 10px;
+    border: 1px solid rgb(201, 201, 201);
+    border-radius: 40px;
 }
 
-#buscador:hover{
-    box-shadow: 0 1px 6px 0 #20212447;
+main .central .searcher:hover{
+    box-shadow: 1px 1px 5px 1px rgb(201, 201, 201);
 }
 
-.search{
-    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    float: left;
+main .central .searcher input{
+    width: 90%;
+    border: none;
 }
 
-.botones{
+.icono_search{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+}
+
+#search,#lucky{
     margin: 20px 20px;
     height: 30px;
     border: none;
@@ -76,7 +98,52 @@ body{
     cursor: pointer;
 }
 
-.botones:hover{
+#search:hover{
     border: 1px solid rgb(201, 201, 201);
 }
+
+#lucky:hover{
+    border: 1px solid rgb(201, 201, 201);
+}
+
+footer{
+    background-color: rgba(201, 201, 201, 0.385);
+    display: flex;
+    flex-direction: column;
+    height: 125px;
+    color: gray;
+}
+
+footer section{
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    height: 50%;
+}
+
+.info{
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info div{
+    display: flex;
+}
+
+.info div a{
+    margin: 15px;
+    color: gray;
+}
+
+.info div a:hover{
+    text-decoration: underline;
+}
+
+#colombia{
+    padding: 15px;
+}
+
+
+
 

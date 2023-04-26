@@ -5,42 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <title>Google</title>
+    <title>Clon de Google</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
             <div class="nav">
-                <ul>
-                    <li>Gmail</li>
-                    <li>Imagenes</li>
-                    <li><img class="icono_menu" src="images/icono_puntos.png" alt=""></li>
-                    <li><img class="foto_menu"src="images/diego.jpg" alt=""></li>
-                </ul>
+                <section class="nav_menu">
+                    <ul>
+                        <li><a href="#">Gmail</a></li>
+                        <li><a href="#">Imagenes</a></li> 
+                        <li><img class="icono_menu" src="images/icono_puntos.png" alt=""></li>
+                        <li><img class="foto_menu"src="images/diego.jpg" alt=""></li>
+                    </ul>
+                </section> 
             </div>
         </nav>
     </header>
     
+    <main>
+        <div class="central">
+            <section>
+            <div>
+                <img id="logo" src="images/icono_google.png" alt="">
+            </div>
+            </section> 
+            <section>  
+                <div class="searcher">
+                    <img class="icono_search" src="images/lupa.png" alt="">
+                    <input type="text" name="" id="input-search">
+                    <img class="icono_search" src="images/microfono.png" alt="">
+                </div>
+            </section>
+            <section>
+                <div class="botones">
+                    <button class="btn-search" id="search">Buscar con Google</button>
+                    <button class="btn-search" id="lucky">Voy a tener suerte</button>
+                </div>
+            </section>
+        </div> 
+    </main>
 
-    <section>
-        <div class="google">
-            <img class="icono_google" src="images/icono_google.png" alt="">
-        </div>
-    </section> 
-    <section class="main-input">  
-        <div class="google">
-            <span class="search"></span>
-            <input type="text" name="" id="buscador" placeholder="Busca en Google o escribir una URL">
-            <a href="" class="microfono"></a>
-        </div>
-    </section>
-    <section>
-        <div class="google">
-            <button class="botones">Buscar con Google</button>
-            <button class="botones">Voy a tener suerte</button>
-        </div>
-    </section>
+    <footer>
+        <section><span id="colombia">Colombia</span></section>
+        <section class="info">
+            <div >
+                <a href="">Sobre Google</a>
+                <a href="">Publicidad</a>
+                <a href="">Negocios</a>
+                <a href="">Cómo funciona la Búsqueda</a>
+            </div>
+            <div>
+                <a href="">Privacidad</a>
+                <a href="">Condiciones</a>
+                <a href="">Preferencias</a>
+            </div>
+        </section>
+        
+    </footer>
+    
     
     
     
